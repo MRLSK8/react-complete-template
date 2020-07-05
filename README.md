@@ -17,6 +17,7 @@
   - [react-router-dom](https://reactrouter.com/web/guides/quick-start)
   - [swr](https://github.com/vercel/swr)
   - [axios](https://github.com/axios/axios)
+  - [prop-types](https://github.com/facebook/prop-types)
 
 ## Licença
 

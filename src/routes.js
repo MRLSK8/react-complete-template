@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Login from './pages/Login';
 import Main from './pages/Main';
+import Detail from './pages/Detail';
 import * as auth from './services/auth';
 import { fetcher } from './services/api';
 import { SWRConfig } from 'swr';
@@ -36,6 +37,7 @@ function Routes() {
     <Switch>
       <Route path='/login' component={Login} />
       <PrivateRoute path='/main' component={Main} />
+      <Route path='/detail' component={Detail} />
 
       <Redirect from='/*' to='/login' />
     </Switch>

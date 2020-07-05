@@ -39,7 +39,7 @@ function Routes() {
       <PrivateRoute path='/main' component={Main} />
       <Route path='/detail' component={Detail} />
 
-      <Redirect from='/*' to='/login' />
+      <Redirect from='*' to='/login' />
     </Switch>
   );
 }

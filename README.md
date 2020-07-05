@@ -7,8 +7,14 @@
 </div>
 
 ## **:computer: Techs**
+
+  - [Commitlint](https://github.com/conventional-changelog/commitlint)
+  - [Commitizen](https://github.com/commitizen/cz-cli)
+  - [Husky](https://github.com/typicode/husky)
+  - [Styled components](https://github.com/styled-components/styled-components)
   
 ## Licença
-[MIT](https://github.com/christyanbrayan/be-the-hero/blob/master/LICENSE)
+
+This project is licensed under the [MIT](https://github.com/christyanbrayan/be-the-hero/blob/master/LICENSE) License
 
 <h2 align="center">Done with ❤️ by <a href="https://www.linkedin.com/in/mrlsk8/">Marcelo lima</a></h2>

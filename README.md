@@ -12,7 +12,12 @@
   - [Commitizen](https://github.com/commitizen/cz-cli)
   - [Husky](https://github.com/typicode/husky)
   - [Styled components](https://github.com/styled-components/styled-components)
-  
+  - [Datefns](https://date-fns.org/docs/Getting-Started)
+  - [history](https://github.com/ReactTraining/history)
+  - [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+  - [swr](https://github.com/vercel/swr)
+  - [axios](https://github.com/axios/axios)
+
 ## Licença
 
 This project is licensed under the [MIT](https://github.com/christyanbrayan/be-the-hero/blob/master/LICENSE) License

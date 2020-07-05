@@ -4,7 +4,12 @@ import { createBrowserHistory } from 'history';
 import * as serviceWorker from './serviceWorker';
 import Login from './pages/Login';
 import Main from './pages/Main';
-import { Router, Route, Switch, Redirect } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from 'react-router-dom';
 import * as auth from './services/auth';
 import { fetcher } from './services/api';
 import { SWRConfig } from 'swr';
@@ -43,7 +48,7 @@ function App() {
         <Route path='/login' component={Login} />
         <PrivateRoute path='/main' component={Main} />
 
-        <Redirect from='/*' to='/main' />
+        <Redirect from='/*' to='/login' />
       </Switch>
     </Router>
   );

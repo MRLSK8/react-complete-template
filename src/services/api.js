@@ -6,7 +6,7 @@ export const api = axios.create({
   baseURL,
 });
 
-export function fetcher(path) {
+export const fetcher = (path) => {
   return api.get(path).then((response) => {
     if (response.ok) {
       return response.data;
@@ -14,4 +14,4 @@ export function fetcher(path) {
       throw response.error;
     }
   });
-}
+};

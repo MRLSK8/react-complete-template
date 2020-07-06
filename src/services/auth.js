@@ -12,5 +12,5 @@ export const logout = () => {
   sessionStorage.removeItem(USER_KEY);
   sessionStorage.clear();
   // Forcing reloading page
-  window.location.reload(); 
+  window.location.reload();
 };

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-function Header() {
+const Header = () => {
   return (
     <Container>
       <h1>Header</h1>

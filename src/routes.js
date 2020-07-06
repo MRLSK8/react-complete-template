@@ -35,11 +35,11 @@ PrivateRoute.propTypes = {
 function Routes() {
   return (
     <Switch>
-      <Route path='/login' component={Login} />
-      <PrivateRoute path='/main' component={Main} />
-      <Route path='/detail' component={Detail} />
+      <Route path="/login" component={Login} />
+      <PrivateRoute path="/main" component={Main} />
+      <Route path="/detail" component={Detail} />
 
-      <Redirect from='*' to='/login' />
+      <Redirect from="*" to="/login" />
     </Switch>
   );
 }

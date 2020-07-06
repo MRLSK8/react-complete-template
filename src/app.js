@@ -3,13 +3,13 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from './routes';
 import Header from './components/Header';
 
-function src() {
+const App = () => {
   return (
     <Router>
       <Header />
       <Routes />
     </Router>
   );
-}
+};
 
-export default src;
+export default App;

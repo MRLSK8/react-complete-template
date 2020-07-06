@@ -20,6 +20,7 @@
   - [SWR](https://github.com/vercel/swr)
   - [Axios](https://github.com/axios/axios)
   - [Prop types](https://github.com/facebook/prop-types)
+  - [Eslint](https://github.com/eslint/eslint)
 
 ## Licença
 

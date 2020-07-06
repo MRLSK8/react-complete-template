@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Title } from './styles';
 
 const Detail = () => (
   <Container>
-    <h1>Detail</h1>
+    <Title>Detail</Title>
   </Container>
 );
 

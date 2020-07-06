@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Title } from './styles';
 
 const Main = () => (
   <Container>
-    <h1>Main page</h1>
+    <Title>Main page</Title>
   </Container>
 );
 

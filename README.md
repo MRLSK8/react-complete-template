@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 
@@ -21,6 +21,7 @@
   - [Axios](https://github.com/axios/axios)
   - [Prop types](https://github.com/facebook/prop-types)
   - [Eslint](https://github.com/eslint/eslint)
+    - [Eslint import helpers](https://github.com/Tibfib/eslint-plugin-import-helpers)
 
 ## Licença
 

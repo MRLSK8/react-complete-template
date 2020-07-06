@@ -2,12 +2,10 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const Button = () => {
-  return (
-    <Container>
-      <button />
-    </Container>
-  );
-};
+const Button = () => (
+  <Container>
+    <button type="button">Enviar</button>
+  </Container>
+);
 
 export default Button;

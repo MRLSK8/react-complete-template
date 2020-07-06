@@ -1,47 +1,46 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
+
+import PropTypes from 'prop-types';
+import { SWRConfig } from 'swr';
+
+import { fetcher } from './services/api';
+import * as auth from './services/auth';
+
+import Detail from './pages/Detail';
 import Login from './pages/Login';
 import Main from './pages/Main';
-import Detail from './pages/Detail';
-import * as auth from './services/auth';
-import { fetcher } from './services/api';
-import { SWRConfig } from 'swr';
-import PropTypes from 'prop-types';
 
-const PrivateRoute = ({ component: Component, ...args }) => {
-  return (
-    <SWRConfig value={{ fetcher, revalidateOnFocus: false }}>
-      <Route
-        {...args}
-        render={(props) =>
-          auth.isAuthenticated() ? (
-            <Component {...props} />
-          ) : (
-            <Redirect
-              to={{ pathname: '/login', state: { from: props.location } }}
-            />
-          )
-        }
-      />
-    </SWRConfig>
-  );
-};
+const PrivateRoute = ({ component: Component, ...args }) => (
+  <SWRConfig value={{ fetcher, revalidateOnFocus: false }}>
+    <Route
+      {...args}
+      render={(props) =>
+        auth.isAuthenticated() ? (
+          <Component {...props} />
+        ) : (
+          <Redirect
+            to={{ pathname: '/login', state: { from: props.location } }}
+          />
+        )
+      }
+    />
+  </SWRConfig>
+);
 
 PrivateRoute.propTypes = {
-  component: PropTypes.elementType,
-  location: PropTypes.object,
+  component: PropTypes.objectOf(PropTypes.elementType),
+  location: PropTypes.objectOf(),
 };
 
-const Routes = () => {
-  return (
-    <Switch>
-      <Route path="/login" component={Login} />
-      <PrivateRoute path="/main" component={Main} />
-      <Route path="/detail" component={Detail} />
+const Routes = () => (
+  <Switch>
+    <Route path="/login" component={Login} />
+    <PrivateRoute path="/main" component={Main} />
+    <Route path="/detail" component={Detail} />
 
-      <Redirect from="*" to="/login" />
-    </Switch>
-  );
-};
+    <Redirect from="*" to="/login" />
+  </Switch>
+);
 
 export default Routes;

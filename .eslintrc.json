@@ -1,5 +1,5 @@
 {
-  "parser": "babel-eslint",
+  // "parser": "babel-eslint",
   "env": {
     "browser": true,
     "es2020": true,
@@ -13,7 +13,7 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react", "jsx-a11y", "import"],
+  "plugins": ["react", "jsx-a11y", "import", "import-helpers"],
   "rules": {
     "react/jsx-filename-extension": [
       "error",
@@ -23,6 +23,32 @@
     ],
     "global-require": "off",
     "import/prefer-default-export": "off",
-    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }]
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always", // new line between groups
+        "groups": [
+          "/^react/",
+          "module",
+          ["parent", "sibling", "index"],
+          "/^./pages/"
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
+    "react/jsx-props-no-spreading": ["error", { "custom": "ignore" }],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "always",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
+    "implicit-arrow-linebreak": ["error", "beside"],
+    "no-console": "off"
   }
 }

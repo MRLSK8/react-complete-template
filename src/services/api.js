@@ -7,9 +7,9 @@ export const api = axios.create({
 });
 
 export const fetcher = (path) =>
-  api.get(path).then((response) => {
-    if (response.ok) {
-      return response.data;
-    }
-    throw response.error;
-  });
+  api
+    .get(path)
+    .then((response) => response.data)
+    .catch((err) => {
+      throw new Error({ Error: err });
+    });

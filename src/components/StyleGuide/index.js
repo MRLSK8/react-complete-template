@@ -6,7 +6,7 @@ import theme from '../../styles/theme';
 
 export default function StyleGuide() {
   return (
-    <div>
+    <Container>
       <Row>
         <Square
           color="none"
@@ -16,7 +16,7 @@ export default function StyleGuide() {
             alignItems: 'center',
           }}
         >
-          <h3>Primary</h3>
+          <Title>Primary</Title>
         </Square>
         <Square
           color="none"
@@ -26,7 +26,7 @@ export default function StyleGuide() {
             alignItems: 'center',
           }}
         >
-          <h3>Secondary</h3>
+          <Title>Secondary</Title>
         </Square>
         <Square
           color="none"
@@ -36,7 +36,7 @@ export default function StyleGuide() {
             alignItems: 'center',
           }}
         >
-          <h3>Accent</h3>
+          <Title>Accent</Title>
         </Square>
         <Square
           color="none"
@@ -46,7 +46,7 @@ export default function StyleGuide() {
             alignItems: 'center',
           }}
         >
-          <h3>Contrast</h3>
+          <Title>Contrast</Title>
         </Square>
         <Square
           color="none"
@@ -56,7 +56,7 @@ export default function StyleGuide() {
             alignItems: 'center',
           }}
         >
-          <h3>Background</h3>
+          <Title>Background</Title>
         </Square>
         <Square
           color="none"
@@ -66,7 +66,7 @@ export default function StyleGuide() {
             alignItems: 'center',
           }}
         >
-          <h3>Text</h3>
+          <Title>Text</Title>
         </Square>
       </Row>
       <Row>
@@ -93,9 +93,22 @@ export default function StyleGuide() {
         <Square color={theme.backgroundDark} />
         <Square color={theme.textDark} />
       </Row>
-    </div>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Title = styled.h3`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Row = styled.div`
   display: flex;

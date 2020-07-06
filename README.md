@@ -9,14 +9,17 @@
 ## **:computer: Techs**
 
   - [Commitlint](https://github.com/conventional-changelog/commitlint)
-  - [Commitizen](https://github.com/commitizen/cz-cli)
-  - [Husky](https://github.com/typicode/husky)
+    - [Commitizen](https://github.com/commitizen/cz-cli)
+    - [Husky](https://github.com/typicode/husky)
   - [Styled components](https://github.com/styled-components/styled-components)
   - [Datefns](https://date-fns.org/docs/Getting-Started)
-  - [react-router-dom](https://reactrouter.com/web/guides/quick-start)
-  - [swr](https://github.com/vercel/swr)
-  - [axios](https://github.com/axios/axios)
-  - [prop-types](https://github.com/facebook/prop-types)
+  - [React app rewired](https://github.com/timarney/react-app-rewired)
+    - [Babel plugin root import](https://www.npmjs.com/package/babel-plugin-root-import)
+    - [Custumize cra](https://github.com/arackaf/customize-cra)
+  - [React router dom](https://reactrouter.com/web/guides/quick-start)
+  - [SWR](https://github.com/vercel/swr)
+  - [Axios](https://github.com/axios/axios)
+  - [Prop types](https://github.com/facebook/prop-types)
 
 ## Licença
 

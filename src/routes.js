@@ -8,7 +8,7 @@ import { fetcher } from './services/api';
 import { SWRConfig } from 'swr';
 import PropTypes from 'prop-types';
 
-function PrivateRoute({ component: Component, ...args }) {
+const PrivateRoute = ({ component: Component, ...args }) => {
   return (
     <SWRConfig value={{ fetcher, revalidateOnFocus: false }}>
       <Route
@@ -25,14 +25,14 @@ function PrivateRoute({ component: Component, ...args }) {
       />
     </SWRConfig>
   );
-}
+};
 
 PrivateRoute.propTypes = {
   component: PropTypes.elementType,
   location: PropTypes.object,
 };
 
-function Routes() {
+const Routes = () => {
   return (
     <Switch>
       <Route path="/login" component={Login} />
@@ -42,6 +42,6 @@ function Routes() {
       <Redirect from="*" to="/login" />
     </Switch>
   );
-}
+};
 
 export default Routes;

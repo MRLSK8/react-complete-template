@@ -22,6 +22,7 @@
   - [Prop types](https://github.com/facebook/prop-types)
   - [Eslint](https://github.com/eslint/eslint)
     - [Eslint import helpers](https://github.com/Tibfib/eslint-plugin-import-helpers)
+  - [Color](https://github.com/Qix-/color)
 
 ## Licença
 

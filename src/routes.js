@@ -4,6 +4,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { SWRConfig } from 'swr';
 
+import StyleGuide from './components/StyleGuide';
 import { fetcher } from './services/api';
 import * as auth from './services/auth';
 
@@ -38,6 +39,7 @@ const Routes = () => (
     <Route path="/login" component={Login} />
     <PrivateRoute path="/main" component={Main} />
     <Route path="/detail" component={Detail} />
+    <Route path="/styleguide" component={StyleGuide} />
 
     <Redirect from="*" to="/login" />
   </Switch>

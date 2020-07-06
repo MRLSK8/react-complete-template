@@ -32,6 +32,7 @@
           "/^react/",
           "module",
           ["parent", "sibling", "index"],
+          "/^~/",
           "/^./pages/"
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }
@@ -42,13 +43,15 @@
       "error",
       {
         "arrays": "never",
-        "objects": "always",
+        "objects": "always-multiline",
         "imports": "never",
         "exports": "never",
         "functions": "never"
       }
     ],
-    "implicit-arrow-linebreak": ["error", "beside"],
+    "implicit-arrow-linebreak": 0,
+    "no-confusing-arrow": 0,
+    "react/jsx-curly-newline": 0,
     "no-console": "off"
   }
 }

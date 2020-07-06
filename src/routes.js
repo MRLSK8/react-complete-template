@@ -29,8 +29,8 @@ const PrivateRoute = ({ component: Component, ...args }) => (
 );
 
 PrivateRoute.propTypes = {
-  component: PropTypes.objectOf(PropTypes.elementType),
-  location: PropTypes.objectOf(),
+  component: PropTypes.objectOf(PropTypes.elementType).isRequired,
+  location: PropTypes.objectOf().isRequired,
 };
 
 const Routes = () => (

@@ -7,7 +7,7 @@ export const baseURL = 'http://localhost:3333';
 export const api = axios.create({
   baseURL,
   headers: {
-    Authorization: `Bearer ${getUser().token}`,
+    Authorization: `Bearer ${getUser()?.token}`,
   },
 });
 

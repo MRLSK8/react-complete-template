@@ -52,6 +52,7 @@
     "implicit-arrow-linebreak": 0,
     "no-confusing-arrow": 0,
     "react/jsx-curly-newline": 0,
-    "no-console": "off"
+    "no-console": "off",
+    "linebreak-style": "off"
   }
 }

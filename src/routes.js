@@ -6,7 +6,7 @@ import { SWRConfig } from 'swr';
 
 import StyleGuide from './components/StyleGuide';
 import { fetcher } from './services/api';
-import * as auth from './services/auth';
+import { isAuthenticated } from './services/auth';
 
 import Detail from './pages/Detail';
 import Login from './pages/Login';
@@ -17,7 +17,7 @@ const PrivateRoute = ({ component: Component, ...args }) => (
     <Route
       {...args}
       render={(props) =>
-        auth.isAuthenticated() ? (
+        isAuthenticated() ? (
           <Component {...props} />
         ) : (
           <Redirect

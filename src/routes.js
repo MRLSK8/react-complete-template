@@ -37,7 +37,7 @@ PrivateRoute.propTypes = {
 const Routes = () => (
   <Switch>
     <Route path="/login" component={Login} />
-    <PrivateRoute path="/main" component={Main} />
+    <Route path="/main" component={Main} />
     <Route path="/detail" component={Detail} />
     <Route path="/styleguide" component={StyleGuide} />
 

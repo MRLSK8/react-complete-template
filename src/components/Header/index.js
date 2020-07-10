@@ -8,7 +8,14 @@ const Header = () => (
   </Container>
 );
 
-const Container = styled.div``;
+const Container = styled.header`
+  width: 100%;
+  height: 60px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Title = styled.h1``;
 

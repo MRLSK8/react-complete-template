@@ -3,8 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Footer from '../components/Footer/index';
-import Header from '../components/Header/index';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 function Layout({ children }) {
   return (

@@ -7,11 +7,13 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    overflow: hidden;
     background-color: ${(props) => props.theme.background}
   }
   a {
     text-decoration: none
+  }
+  ul {
+    list-style: none;
   }
 `;
 

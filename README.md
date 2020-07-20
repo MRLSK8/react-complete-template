@@ -28,4 +28,4 @@
 
 This project is licensed under the [MIT](https://github.com/MRLSK8/react-template/blob/master/LICENSE) License
 
-<h2 align="center">Done with ❤️ by <a href="https://www.linkedin.com/in/mrlsk8/">Marcelo lima</a></h2>
+<h2 align="center">Made with ❤️ by <a href="https://www.linkedin.com/in/mrlsk8/">Marcelo lima</a></h2>
